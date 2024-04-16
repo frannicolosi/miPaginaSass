@@ -1,0 +1,19 @@
+.casoPre1{
+    width: 300px;
+    border-radius: 3px;
+}
+.casoPost1{
+    @extend .casoPre1;
+}
+
+.contenedorCasos{
+    margin-left:300px ;
+    margin-right:300px ;
+}
+
+.contenedorTexto{
+    display: flex;
+    justify-content: center;
+    color:antiquewhite;
+    gap: 200px;
+}

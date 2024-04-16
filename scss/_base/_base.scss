@@ -1,0 +1,36 @@
+@import"../_components/variables";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: $colorPrincipal;
+ 
+}
+.logo{
+    width: 200px;
+    display: flex;
+    margin: 10px 0px 0px 0px;    
+    }
+
+main{
+    display: flexbox;
+    margin: 100px;
+    text-align: center;
+    justify-content: center;
+    h1{
+        justify-content: center;
+        font-size: 60px;
+        margin: 20px;
+    }
+    
+    p{
+        margin: 30px;
+    }
+    
+}
+

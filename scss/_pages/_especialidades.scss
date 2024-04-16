@@ -1,0 +1,9 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    :hover{
+        box-shadow: 0px 0px 20px 1px whitesmoke;
+        border: 1px solid rgba(255, 255, 255, 0.454); 
+    }
+}

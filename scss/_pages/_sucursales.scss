@@ -1,0 +1,27 @@
+.mapaChico{
+    display: none;
+}
+
+div{
+    .contenedorSucursales{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+    }
+    .contenedorMapa{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+}
+
+div.sucursales{
+    color: white; 
+    img{
+        width: 300px;
+        margin: auto;
+        border-radius: 2%;
+    }
+}
