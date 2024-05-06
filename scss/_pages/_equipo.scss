@@ -1,11 +1,42 @@
+main.contenedorEquipo{
+    text-shadow: none;
+    font-size: 80%;
+    div.container{
+        #contendorCard{
+            div.col{
+                width: 100%;
+                display: inline;
+                align-items: center;
+               
+            }
+        }
+    }
+} 
+@media screen and (min-width:$tabletWidth){
+    main.contenedorEquipo{
+        text-shadow: none;
+        div.container{
+            #contendorCard{
+                div.col{
+                    width: 50%;
+                   
+                }
+            }
+        }
+    } 
+}
+@media screen and (min-width:$escritorioWidth) {
 .contenedorEquipo{
     text-align: center;
     margin-top: 100px;
     text-shadow: none;
+    div.col{
+       
+        div.card{
+            display:grid;
+            grid-template-columns: repeat(2, 100%);
+            width:50%;
+        }
+    }
 } 
-
-div.card{
-    display:grid;
-    grid-template-columns: repeat(2, 100%);
 }
-

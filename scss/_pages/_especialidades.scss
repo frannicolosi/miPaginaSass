@@ -1,9 +1,38 @@
 .contenedor{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+    display: inline;
+    gap: 30px;
+    text-shadow: none;
+    .card{
+        width:100% ;
+    }
     :hover{
         box-shadow: 0px 0px 20px 1px whitesmoke;
         border: 1px solid rgba(255, 255, 255, 0.454); 
     }
+}
+
+@media screen and (min-width:745px){
+    
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        font-size: 50%;
+        .card {
+            width:100%;
+            text-shadow: none;
+            }    
+        }
+
+}
+@media screen and (min-width:$escritorioWidth )
+{
+    .contenedor{
+        display:flex;
+        justify-content: center;
+        align-content:center ;
+        width: 100%;
+        margin-left: 0px;
+        font-size: 50%;
+    }
+    
 }

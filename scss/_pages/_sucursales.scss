@@ -1,4 +1,7 @@
 .mapaChico{
+    display: block;
+}
+.mapaSucursal{
     display: none;
 }
 
@@ -8,20 +11,77 @@ div{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
         align-items: center;
+        p{
+            font-size: 7px;
+            text-align: center;
+            padding: 10px;
+        }
     }
     .contenedorMapa{
         display:flex;
         justify-content: center;
         align-items: center;
-        height: 400px;
+        height: 250px;
     }
 }
 
 div.sucursales{
     color: white; 
     img{
-        width: 300px;
+        width: 160px;
         margin: auto;
         border-radius: 2%;
     }
+}
+@media screen and (min-width:$tabletWidth ){ 
+    div{
+        .contenedorSucursales{ 
+            p{
+                font-size: 12px;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+        .contenedorMapa{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+    }
+    
+    
+}
+@media screen and (min-width:$escritorioWidth ) {
+ 
+    .mapaChico{
+        display: none;
+    }
+    .mapaSucursal{
+        display: block;
+    }
+    div{
+        .contenedorSucursales{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            align-items: center;
+        }
+        .contenedorMapa{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+    }
+    
+    div.sucursales{
+        color: white; 
+        img{
+            width: 300px;
+            margin: auto;
+            border-radius: 2%;
+        }
+    }
+
 }
